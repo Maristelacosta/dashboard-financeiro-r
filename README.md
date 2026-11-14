@@ -1,9 +1,9 @@
-# =====================================================================
+# ====================================================================
 # PROJETO: Análise Financeira em R
-# AUTORA: Maristela Costa
-# DESCRIÇÃO: Análise de receitas, despesas e lucros com estatística 
-# descritiva e visualização de dados financeiros mensais.
-# =====================================================================
+# AUTORA: Maristela Costa[cite: 2]
+# DESCRIÇÃO: Análise de receitas, despesas e lucros com estatística
+# descritiva e visualização de dados financeiros.
+# ====================================================================
 
 # 1. Definição dos Vetores de Dados Mensais
 meses <- c("Jan", "Fev", "Mar", "Abr", "Mai", "Jun")
@@ -41,7 +41,7 @@ print("\nTabela Consolidada:")
 print(dados_financeiros)
 
 # 5. Visualização de Dados (Gráficos)
-# Configurar a janela gráfica para exibir múltiplos gráficos lado a lado
+# Configurar uma janela gráfica para exibir vários gráficos lado a lado
 par(mfrow = c(1, 3))
 
 # Gráfico de Receitas Mensais
@@ -54,6 +54,6 @@ barplot(despesas, names.arg = meses, col = "firebrick",
 
 # Gráfico de Tendência de Lucro
 plot(lucro, type = "o", col = "dodgerblue", lwd = 2, 
-     main = "Evolução do Lucro", xlab = "Meses", ylab = "Lucro (R$)",
+     main = "Evolução do Lucro", xlab = "Meses", ylab = "Lucro (R$)", 
      xaxt = "n")
 axis(1, at = 1:length(meses), labels = meses)
